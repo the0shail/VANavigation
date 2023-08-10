@@ -22,7 +22,7 @@ public class View1 extends BaseController{
     @FXML
     void initialize() {
         goToView2.setOnAction(actionEvent -> {
-            Main.getNavigation().load(View2.URL_FXML).Show();
+            Main.getNavigation().load(SearchController.URL_FXML).Show();
         });
 
         GoBack.setOnAction(actionEvent -> {
