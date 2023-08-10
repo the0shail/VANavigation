@@ -19,11 +19,14 @@ public class Main extends Application {
         primatyStage.show();
 
         // Navigate to first view
-        Main.getNavigation().load(HelloController.URL_FXML).Show();
+//        System.out.println(Main.getNavigation().load(View1.URL_FXML));
+        Main.getNavigation().load(View1.URL_FXML).Show();
+//        Main.getNavigation().load(Main.URL_FXML)
+
 
     }
 
     public static void main(String[] args) {
-        launch();
+        launch(args);
     }
 }

@@ -8,12 +8,13 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 public class HelloController extends BaseController {
-    public static String URL_FXML = "hello-view.fxml";
+    public static final String URL_FXML = "hello-view.fxml";
     @FXML
     private Label welcomeText;
 
     @FXML
     protected void onHelloButtonClick() {
+
     }
 
 

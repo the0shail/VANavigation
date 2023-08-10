@@ -5,9 +5,7 @@ import javafx.scene.Node;
 public class BaseController implements Controller{
     private Node view;
     @Override
-    public Node getView() {
-        return view;
-    }
+    public Node getView() { return view; }
 
     @Override
     public void setView(Node view) {
@@ -16,14 +14,11 @@ public class BaseController implements Controller{
 
     @Override
     public void Show() {
-
+        PreShowing();
+        Main.getNavigation().Show(this);
+        PostShowing();
     }
 
-    public void PreShowing(){
-
-    }
-
-    public void PostShowing(){
-
-    }
+    public void PreShowing(){}
+    public void PostShowing(){}
 }

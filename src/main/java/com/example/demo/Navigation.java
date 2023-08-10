@@ -18,7 +18,7 @@ public class Navigation {
 
     public Navigation (Stage stage){
         this.stage = stage;
-        scene = new Scene(new Pane());
+        scene = new Scene(new Pane(), 980, 600);
         stage.setScene(scene);
     }
     public Controller load(String sUrl){
@@ -31,6 +31,7 @@ public class Navigation {
 
             Controller controller = fxmlLoader.getController();
             controller.setView(root);
+
             return controller;
         } catch (Exception e){
             e.printStackTrace();
